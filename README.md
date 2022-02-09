@@ -65,3 +65,15 @@ We can adjust the instance number in main.tf . Default is two.
 ```
 count = 2
 ```
+### need to update
+
+```
+vpc_security_group_ids      = [aws_security_group.secgroup.id]
+key_name                    = "privatekeyname"
+username and hash
+
+sasl_password   (it need to be replaced with your amazon SES creds.)
+default_destination_rate_delay (change when you would like to adjust the sending delays.)
+
+you can also adjust ingress egress rules.
+```
